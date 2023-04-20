@@ -24,6 +24,15 @@ header {
 }
 header nav {
   color: #FFF;
+  position: absolute;
+}
+@media screen and (min-width: 1024px) {
+  header nav {
+    position: static;
+  }
+}
+header nav ul {
+  display: none;
 }
 @media screen and (min-width: 1024px) {
   header nav ul {
@@ -43,12 +52,14 @@ header nav {
 }
 header span {
   color: #FFF;
+  display: none;
   text-transform: uppercase;
 }
 @media screen and (min-width: 1024px) {
   header span {
     border: 0.1rem solid #8257E5;
     border-radius: 0.5rem;
+    display: inline-block;
     font-size: 0.75rem;
     padding: 0.75rem 2rem;
   }
@@ -59,6 +70,54 @@ header span {
     font-size: 1.25rem;
     padding: 1.25rem 4rem;
   }
+}
+
+main {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+main h1 {
+  color: #FFF;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-top: 5rem;
+  text-align: center;
+  width: 14rem;
+}
+main .main__button--container {
+  align-items: center;
+  border: 0.1rem solid #8257E5;
+  border-radius: 0.3rem;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 1.75rem;
+}
+main .main__button--container span {
+  color: #FFF;
+  font-size: 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+main .main__button--container .arrow {
+  height: 0.5rem;
+}
+main .main__text--first {
+  color: #FFF;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+main .main__text--second {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: -1px -1px 0 #8257E5, 1px -1px 0 #8257E5, -1px 1px 0 #8257E5, 1px 1px 0 #8257E5;
+}
+main .main__coffee {
+  height: 10rem;
+  margin-bottom: 2rem;
 }
 
 * {

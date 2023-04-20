@@ -22,8 +22,14 @@ header {
 
     nav {
         color: $color-text-color;
+        position: absolute;
 
+        @media screen and (min-width: $laptop) {
+            position: static;
+        }
+        
         ul {
+            display: none;
             
             @media screen and (min-width: $laptop) {
                 column-gap: 2rem;
@@ -41,11 +47,13 @@ header {
 
     span {
         color: $color-text-color;
+        display: none;
         text-transform: uppercase;
 
         @media screen and (min-width: $laptop) {
             border: .1rem solid $color-button;
             border-radius: .5rem;
+            display: inline-block;
             font-size: .75rem;
             padding: .75rem 2rem;
         }

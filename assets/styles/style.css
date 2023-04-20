@@ -10,11 +10,26 @@ header {
     -moz-column-gap: 5rem;
          column-gap: 5rem;
     justify-content: center;
+    padding-top: 2.5rem;
   }
 }
 @media screen and (min-width: 1440px) {
   header {
     gap: 5rem;
+    padding-top: 4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .header__logo--mobile {
+    display: none;
+  }
+}
+header .header__logo--desktop {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  header .header__logo--desktop {
+    display: block;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -32,18 +47,6 @@ header .header__desktop--blur {
     height: 30rem;
     left: -10rem;
     position: absolute;
-  }
-}
-header .header__desktop--blu {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  header .header__desktop--blu {
-    display: block;
-    height: 40rem;
-    position: absolute;
-    right: 0;
-    top: -10rem;
   }
 }
 header nav {
@@ -69,9 +72,9 @@ header nav ul {
 }
 @media screen and (min-width: 1440px) {
   header nav ul {
-    font-size: 1.25rem;
     -moz-column-gap: 3.5rem;
          column-gap: 3.5rem;
+    font-size: 1.25rem;
   }
 }
 header span {
@@ -92,8 +95,8 @@ header span {
 @media screen and (min-width: 1440px) {
   header span {
     border: 0.15rem solid #8257E5;
-    font-size: 1.25rem;
-    padding: 1.25rem 4rem;
+    font-size: 1rem;
+    padding: 1rem 3.5rem;
   }
 }
 
@@ -145,8 +148,8 @@ main .main__button--container {
 main .main__button--container span {
   color: #FFF;
   font-size: 0.5rem;
-  text-transform: uppercase;
   font-weight: 700;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
   main .main__button--container span {
@@ -166,7 +169,7 @@ main .main__button--container .arrow {
     margin-bottom: 4rem;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   main .main__texts--container {
     margin-top: 2rem;
   }
@@ -187,6 +190,11 @@ main .main__texts--container .main__text--first {
     font-size: 4rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  main .main__texts--container .main__text--first {
+    font-size: 5rem;
+  }
+}
 main .main__texts--container .main__text--second {
   font-size: 2.5rem;
   font-weight: 700;
@@ -200,6 +208,12 @@ main .main__texts--container .main__text--second {
 @media screen and (min-width: 1024px) {
   main .main__texts--container .main__text--second {
     font-size: 4rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  main .main__texts--container .main__text--second {
+    font-size: 5rem;
+    text-shadow: -1.5px -1.5px 0 #8257E5, 1.5px -1.5px 0 #8257E5, -1.5px 1.5px 0 #8257E5, 1.5px 1.5px 0 #8257E5;
   }
 }
 main .main__images--container {
@@ -224,7 +238,6 @@ main .main__images--container .images__container--coffee {
 @media screen and (min-width: 1024px) {
   main .main__images--container .images__container--coffee {
     display: none;
-    height: 25rem;
   }
 }
 main .main__images--container .images__container--big {
@@ -237,6 +250,11 @@ main .main__images--container .images__container--big {
     height: 24rem;
     position: absolute;
     z-index: 1;
+  }
+}
+@media screen and (min-width: 1440px) {
+  main .main__images--container .images__container--big {
+    height: 35rem;
   }
 }
 main .main__images--container .images__container--blur {
@@ -253,6 +271,18 @@ main .main__images--container .images__container--blur {
 @media screen and (min-width: 1024px) {
   main .main__images--container .images__container--blur {
     display: none;
+  }
+}
+main .main__desktop--blur {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  main .main__desktop--blur {
+    display: block;
+    height: 40rem;
+    position: absolute;
+    right: 0;
+    top: -10rem;
   }
 }
 

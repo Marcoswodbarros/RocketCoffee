@@ -8,10 +8,26 @@ header {
     @media screen and (min-width: $laptop) {
         column-gap: 5rem;
         justify-content: center;
+        padding-top: 2.5rem;
     }
 
     @media screen and (min-width: $laptop-L) {
         gap: 5rem;
+        padding-top: 4rem;
+    }
+
+    .header__logo--mobile {
+        @media screen and (min-width: $laptop) {
+            display: none;
+        }
+    }
+
+    .header__logo--desktop {
+        display: none;
+
+        @media screen and (min-width: $laptop) {
+            display: block;
+        }
     }
 
     .header__menu {
@@ -32,18 +48,6 @@ header {
         }
     }
 
-    .header__desktop--blu {
-        display: none;
-
-        @media screen and (min-width: $tablet) {
-            display: block;
-            height: 40rem;
-            position: absolute;
-            right: 0;
-            top: -10rem;
-        }
-    }
-
     nav {
         color: $color-text-color;
         position: absolute;
@@ -51,10 +55,10 @@ header {
         @media screen and (min-width: $laptop) {
             position: static;
         }
-        
+
         ul {
             display: none;
-            
+
             @media screen and (min-width: $laptop) {
                 column-gap: 2rem;
                 display: flex;
@@ -63,8 +67,8 @@ header {
             }
 
             @media screen and (min-width: $laptop-L) {
-                font-size: 1.25rem;
                 column-gap: 3.5rem;
+                font-size: 1.25rem;
             }
         }
     }
@@ -85,8 +89,8 @@ header {
 
         @media screen and (min-width: $laptop-L) {
             border: .15rem solid $color-button;
-            font-size: 1.25rem;
-            padding: 1.25rem 4rem;
+            font-size: 1rem;
+            padding: 1rem 3.5rem;
         }
     }
 }

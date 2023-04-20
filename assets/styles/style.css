@@ -87,6 +87,12 @@ main h1 {
   text-align: center;
   width: 14rem;
 }
+@media screen and (min-width: 768px) {
+  main h1 {
+    font-size: 1.75rem;
+    width: 16rem;
+  }
+}
 main .main__button--container {
   align-items: center;
   border: 0.1rem solid #8257E5;
@@ -96,14 +102,29 @@ main .main__button--container {
   padding: 0.5rem 1.75rem;
   margin-bottom: 3rem;
 }
+@media screen and (min-width: 768px) {
+  main .main__button--container {
+    padding: 0.75rem 2rem;
+  }
+}
 main .main__button--container span {
   color: #FFF;
   font-size: 0.5rem;
   font-weight: 700;
   text-transform: uppercase;
 }
+@media screen and (min-width: 768px) {
+  main .main__button--container span {
+    font-size: 0.75rem;
+  }
+}
 main .main__button--container .arrow {
   height: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  main .main__button--container .arrow {
+    height: 0.75rem;
+  }
 }
 main .main__text--first {
   color: #FFF;
@@ -111,10 +132,20 @@ main .main__text--first {
   font-weight: 700;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  main .main__text--first {
+    font-size: 3rem;
+  }
+}
 main .main__text--second {
   font-size: 2.5rem;
   font-weight: 700;
   text-shadow: -1px -1px 0 #8257E5, 1px -1px 0 #8257E5, -1px 1px 0 #8257E5, 1px 1px 0 #8257E5;
+}
+@media screen and (min-width: 768px) {
+  main .main__text--second {
+    font-size: 3rem;
+  }
 }
 main .main__images--container {
   display: flex;
@@ -122,16 +153,26 @@ main .main__images--container {
   position: relative;
   width: 100vw;
 }
-main .main__images--container .main__coffee {
+main .main__images--container .images__container--coffee {
   height: 10rem;
   z-index: 1;
 }
-main .main__images--container .blur {
+@media screen and (min-width: 768px) {
+  main .main__images--container .images__container--coffee {
+    height: 15rem;
+  }
+}
+main .main__images--container .images__container--blur {
   bottom: 0;
   height: 25rem;
   left: 0;
   position: absolute;
   width: 100vw;
+}
+@media screen and (min-width: 768px) {
+  main .main__images--container .images__container--blur {
+    height: 30rem;
+  }
 }
 
 * {

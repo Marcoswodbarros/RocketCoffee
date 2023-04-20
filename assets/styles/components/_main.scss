@@ -12,6 +12,11 @@ main {
         margin: 5rem 0 3rem 0;
         text-align: center;
         width: 14rem;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 1.75rem;
+            width: 16rem;
+        }
     }
 
     .main__button--container {
@@ -23,15 +28,27 @@ main {
         padding: .5rem 1.75rem;
         margin-bottom: 3rem;
 
+        @media screen and (min-width: $tablet) {
+            padding: .75rem 2rem;
+        }
+
         span {
             color: $color-text-color;
             font-size: .5rem;
             font-weight: 700;
             text-transform: uppercase;
+
+            @media screen and (min-width: $tablet) {
+                font-size: .75rem;
+            }
         }
 
         .arrow {
             height: .5rem;
+
+            @media screen and (min-width: $tablet) {
+                height: .75rem;
+            }
         }
     }
 
@@ -40,12 +57,20 @@ main {
         font-size: 2.5rem;
         font-weight: 700;
         text-align: center;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 3rem;
+        }
     }
 
     .main__text--second {
         font-size: 2.5rem;
         font-weight: 700;
         text-shadow: -1px -1px 0 $color-button, 1px -1px 0 $color-button, -1px 1px 0 $color-button, 1px 1px 0 $color-button;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 3rem;
+        }
     }
 
 
@@ -55,17 +80,25 @@ main {
         position: relative;
         width: 100vw;
 
-        .main__coffee {
+        .images__container--coffee {
             height: 10rem;
             z-index: 1;
+
+            @media screen and (min-width: $tablet) {
+                height: 15rem;
+            }
         }
 
-        .blur {
+        .images__container--blur {
             bottom: 0;
             height: 25rem;
             left: 0;
             position: absolute;
             width: 100vw;
+
+            @media screen and (min-width: $tablet) {
+                height: 30rem;
+            }
         }
     }
 }

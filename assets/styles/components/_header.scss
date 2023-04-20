@@ -81,7 +81,7 @@ header {
                     transition: width .7s ease;
                     width: 0px;
                 }
-                
+
                 &:hover {
                     cursor: pointer;
 
@@ -108,12 +108,19 @@ header {
             font-weight: 700;
             padding: .5rem 2rem;
             z-index: 1;
-        }
 
-        @media screen and (min-width: $laptop-L) {
-            border: .15rem solid $color-button;
-            font-size: 1rem;
-            padding: 1rem 3.5rem;
+            &:hover {
+                color: $color-backgrond;
+                background-color: $color-button;
+                border: .1rem dashed $color-text-color;
+                transition: .7s;
+            }
+
+            @media screen and (min-width: $laptop-L) {
+                border: .15rem solid $color-button;
+                font-size: 1rem;
+                padding: 1rem 3.5rem;
+            }
         }
     }
 }

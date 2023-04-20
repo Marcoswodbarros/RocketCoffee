@@ -110,8 +110,14 @@ header .header__button {
     padding: 0.5rem 2rem;
     z-index: 1;
   }
+  header .header__button:hover {
+    color: #000;
+    background-color: #8257E5;
+    border: 0.1rem dashed #FFF;
+    transition: 0.7s;
+  }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) and (min-width: 1440px) {
   header .header__button {
     border: 0.15rem solid #8257E5;
     font-size: 1rem;

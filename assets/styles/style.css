@@ -6,6 +6,18 @@ header {
   padding: 1.5rem 1rem;
 }
 @media screen and (min-width: 1024px) {
+  header {
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1440px) {
+  header {
+    gap: 5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
   header .header__menu {
     display: none;
   }
@@ -13,20 +25,20 @@ header {
 header nav {
   color: #FFF;
 }
-header nav ul {
-  display: flex;
-  justify-content: space-around;
-  -moz-column-gap: 3rem;
-       column-gap: 3rem;
-}
 @media screen and (min-width: 1024px) {
   header nav ul {
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    display: flex;
     font-size: 0.75rem;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 1440px) {
   header nav ul {
     font-size: 1.25rem;
+    -moz-column-gap: 3.5rem;
+         column-gap: 3.5rem;
   }
 }
 header span {
@@ -35,14 +47,15 @@ header span {
 }
 @media screen and (min-width: 1024px) {
   header span {
-    font-size: 0.75rem;
-    padding: 0.75rem 3rem;
-    border: 1px solid #8257E5;
+    border: 0.1rem solid #8257E5;
     border-radius: 0.5rem;
+    font-size: 0.75rem;
+    padding: 0.75rem 2rem;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   header span {
+    border: 0.15rem solid #8257E5;
     font-size: 1.25rem;
     padding: 1.25rem 4rem;
   }

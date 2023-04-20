@@ -5,6 +5,15 @@ header {
     justify-content: space-between;
     padding: 1.5rem 1rem;
 
+    @media screen and (min-width: $laptop) {
+        column-gap: 5rem;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: $laptop-L) {
+        gap: 5rem;
+    }
+
     .header__menu {
         @media screen and (min-width: $laptop) {
             display: none;
@@ -15,16 +24,17 @@ header {
         color: $color-text-color;
 
         ul {
-            display: flex;
-            justify-content: space-around;
-            column-gap: 3rem;
-
+            
             @media screen and (min-width: $laptop) {
+                column-gap: 2rem;
+                display: flex;
                 font-size: .75rem;
+                justify-content: space-around;
             }
 
             @media screen and (min-width: $laptop-L) {
                 font-size: 1.25rem;
+                column-gap: 3.5rem;
             }
         }
     }
@@ -34,13 +44,14 @@ header {
         text-transform: uppercase;
 
         @media screen and (min-width: $laptop) {
-            font-size: .75rem;
-            padding: .75rem 3rem;
-            border: 1px solid $color-button;
+            border: .1rem solid $color-button;
             border-radius: .5rem;
+            font-size: .75rem;
+            padding: .75rem 2rem;
         }
 
-        @media screen and (min-width: $laptop) {
+        @media screen and (min-width: $laptop-L) {
+            border: .15rem solid $color-button;
             font-size: 1.25rem;
             padding: 1.25rem 4rem;
         }

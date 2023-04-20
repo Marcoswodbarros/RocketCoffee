@@ -5,7 +5,53 @@ header {
   justify-content: space-between;
   padding: 1.5rem 1rem;
 }
+@media screen and (min-width: 1024px) {
+  header .header__menu {
+    display: none;
+  }
+}
+header nav {
+  color: #FFF;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+@media screen and (min-width: 1024px) {
+  header nav ul {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  header nav ul {
+    font-size: 1.25rem;
+  }
+}
+header span {
+  color: #FFF;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1024px) {
+  header span {
+    font-size: 0.75rem;
+    padding: 0.75rem 3rem;
+    border: 1px solid #8257E5;
+    border-radius: 0.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header span {
+    font-size: 1.25rem;
+    padding: 1.25rem 4rem;
+  }
+}
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
 }/*# sourceMappingURL=style.css.map */

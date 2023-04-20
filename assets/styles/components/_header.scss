@@ -4,4 +4,45 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 1rem;
+
+    .header__menu {
+        @media screen and (min-width: $laptop) {
+            display: none;
+        }
+    }
+
+    nav {
+        color: $color-text-color;
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            column-gap: 3rem;
+
+            @media screen and (min-width: $laptop) {
+                font-size: .75rem;
+            }
+
+            @media screen and (min-width: $laptop-L) {
+                font-size: 1.25rem;
+            }
+        }
+    }
+
+    span {
+        color: $color-text-color;
+        text-transform: uppercase;
+
+        @media screen and (min-width: $laptop) {
+            font-size: .75rem;
+            padding: .75rem 3rem;
+            border: 1px solid $color-button;
+            border-radius: .5rem;
+        }
+
+        @media screen and (min-width: $laptop) {
+            font-size: 1.25rem;
+            padding: 1.25rem 4rem;
+        }
+    }
 }

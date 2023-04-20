@@ -77,13 +77,13 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4rem;
+  gap: 2rem;
 }
 main h1 {
   color: #FFF;
   font-size: 1.5rem;
   line-height: 2rem;
-  margin-top: 5rem;
+  margin: 5rem 0 3rem 0;
   text-align: center;
   width: 14rem;
 }
@@ -94,6 +94,7 @@ main .main__button--container {
   display: flex;
   gap: 0.5rem;
   padding: 0.5rem 1.75rem;
+  margin-bottom: 3rem;
 }
 main .main__button--container span {
   color: #FFF;
@@ -115,9 +116,22 @@ main .main__text--second {
   font-weight: 700;
   text-shadow: -1px -1px 0 #8257E5, 1px -1px 0 #8257E5, -1px 1px 0 #8257E5, 1px 1px 0 #8257E5;
 }
-main .main__coffee {
+main .main__images--container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+}
+main .main__images--container .main__coffee {
   height: 10rem;
-  margin-bottom: 2rem;
+  z-index: 1;
+}
+main .main__images--container .blur {
+  bottom: 0;
+  height: 25rem;
+  left: 0;
+  position: absolute;
+  width: 100vw;
 }
 
 * {

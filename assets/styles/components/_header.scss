@@ -12,7 +12,7 @@ header {
     }
 
     @media screen and (min-width: $laptop-L) {
-        gap: 5rem;
+        column-gap: 5rem;
         padding-top: 4rem;
     }
 
@@ -27,6 +27,7 @@ header {
 
         @media screen and (min-width: $laptop) {
             display: block;
+            cursor: pointer;
         }
     }
 
@@ -70,10 +71,30 @@ header {
                 column-gap: 3.5rem;
                 font-size: 1.25rem;
             }
+
+            li {
+                &::after {
+                    content: " ";
+                    display: block;
+                    height: 3px;
+                    margin: auto;
+                    transition: width .7s ease;
+                    width: 0px;
+                }
+                
+                &:hover {
+                    cursor: pointer;
+
+                    &:hover::after {
+                        background-color: $color-text-color;
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
 
-    span {
+    .header__button {
         color: $color-text-color;
         display: none;
         text-transform: uppercase;
@@ -81,10 +102,12 @@ header {
         @media screen and (min-width: $laptop) {
             border: .1rem solid $color-button;
             border-radius: .5rem;
+            cursor: pointer;
             display: inline-block;
             font-size: .6rem;
             font-weight: 700;
             padding: .5rem 2rem;
+            z-index: 1;
         }
 
         @media screen and (min-width: $laptop-L) {

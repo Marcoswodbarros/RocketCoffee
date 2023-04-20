@@ -1,8 +1,8 @@
 main {
+    align-items: center;
     background-color: $color-backgrond;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 2rem;
 
     h1 {
@@ -25,8 +25,8 @@ main {
         border-radius: .3rem;
         display: flex;
         gap: .5rem;
-        padding: .5rem 1.75rem;
         margin-bottom: 3rem;
+        padding: .5rem 1.75rem;
 
         @media screen and (min-width: $tablet) {
             padding: .75rem 2rem;
@@ -35,8 +35,8 @@ main {
         span {
             color: $color-text-color;
             font-size: .5rem;
-            font-weight: 700;
             text-transform: uppercase;
+            font-weight: 700;
 
             @media screen and (min-width: $tablet) {
                 font-size: .75rem;
@@ -52,36 +52,47 @@ main {
         }
     }
 
-    .main__text--first {
-        color: $color-text-color;
-        font-size: 2.5rem;
-        font-weight: 700;
-        text-align: center;
+    .main__texts--container {
 
         @media screen and (min-width: $tablet) {
-            font-size: 3rem;
+            margin-bottom: 4rem;
         }
-    }
 
-    .main__text--second {
-        font-size: 2.5rem;
-        font-weight: 700;
-        text-shadow: -1px -1px 0 $color-button, 1px -1px 0 $color-button, -1px 1px 0 $color-button, 1px 1px 0 $color-button;
+        .main__text--first {
+            color: $color-text-color;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
 
-        @media screen and (min-width: $tablet) {
-            font-size: 3rem;
+            @media screen and (min-width: $tablet) {
+                font-size: 3rem;
+            }
+        }
+
+        .main__text--second {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-shadow: -1px -1px 0 $color-button, 1px -1px 0 $color-button, -1px 1px 0 $color-button, 1px 1px 0 $color-button;
+
+            @media screen and (min-width: $tablet) {
+                font-size: 3rem;
+            }
         }
     }
 
 
     .main__images--container {
+        align-items: center;
         display: flex;
+        flex-direction: column;
+        height: 10rem;
         justify-content: center;
-        position: relative;
         width: 100vw;
 
         .images__container--coffee {
+            bottom: 0;
             height: 10rem;
+            position: absolute;
             z-index: 1;
 
             @media screen and (min-width: $tablet) {
@@ -92,7 +103,6 @@ main {
         .images__container--blur {
             bottom: 0;
             height: 25rem;
-            left: 0;
             position: absolute;
             width: 100vw;
 

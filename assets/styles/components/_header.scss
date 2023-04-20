@@ -20,6 +20,30 @@ header {
         }
     }
 
+    .header__desktop--blur {
+        display: none;
+
+        @media screen and (min-width: $tablet) {
+            bottom: 0;
+            display: block;
+            height: 30rem;
+            left: -10rem;
+            position: absolute;
+        }
+    }
+
+    .header__desktop--blu {
+        display: none;
+
+        @media screen and (min-width: $tablet) {
+            display: block;
+            height: 40rem;
+            position: absolute;
+            right: 0;
+            top: -10rem;
+        }
+    }
+
     nav {
         color: $color-text-color;
         position: absolute;
@@ -54,8 +78,9 @@ header {
             border: .1rem solid $color-button;
             border-radius: .5rem;
             display: inline-block;
-            font-size: .75rem;
-            padding: .75rem 2rem;
+            font-size: .6rem;
+            font-weight: 700;
+            padding: .5rem 2rem;
         }
 
         @media screen and (min-width: $laptop-L) {

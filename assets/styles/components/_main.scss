@@ -17,6 +17,10 @@ main {
             font-size: 1.75rem;
             width: 16rem;
         }
+
+        @media screen and (min-width: $laptop) {
+            display: none;
+        }
     }
 
     .main__button--container {
@@ -30,6 +34,10 @@ main {
 
         @media screen and (min-width: $tablet) {
             padding: .75rem 2rem;
+        }
+
+        @media screen and (min-width: $laptop) {
+            display: none;
         }
 
         span {
@@ -58,14 +66,22 @@ main {
             margin-bottom: 4rem;
         }
 
+        @media screen and (min-width: $laptop) {
+            margin-top: 2rem;
+        }
+
         .main__text--first {
             color: $color-text-color;
-            text-align: center;
             font-size: 2.5rem;
             font-weight: 700;
+            text-align: center;
 
             @media screen and (min-width: $tablet) {
                 font-size: 3rem;
+            }
+
+            @media screen and (min-width: $laptop) {
+                font-size: 4rem;
             }
         }
 
@@ -77,9 +93,12 @@ main {
             @media screen and (min-width: $tablet) {
                 font-size: 3rem;
             }
+
+            @media screen and (min-width: $laptop) {
+                font-size: 4rem;
+            }
         }
     }
-
 
     .main__images--container {
         align-items: center;
@@ -98,6 +117,23 @@ main {
             @media screen and (min-width: $tablet) {
                 height: 15rem;
             }
+
+            @media screen and (min-width: $laptop) {
+                display: none;
+                height: 25rem;
+            }
+        }
+
+        .images__container--big {
+            display: none;
+
+            @media screen and (min-width: $laptop) {
+                bottom: 0;
+                display: block;
+                height: 24rem;
+                position: absolute;
+                z-index: 1;
+            }
         }
 
         .images__container--blur {
@@ -108,6 +144,10 @@ main {
 
             @media screen and (min-width: $tablet) {
                 height: 30rem;
+            }
+
+            @media screen and (min-width: $laptop) {
+                display: none;
             }
         }
     }

@@ -68,7 +68,9 @@ header nav {
 }
 @media screen and (min-width: 1024px) {
   header nav {
+    display: block;
     position: static;
+    width: auto;
   }
 }
 header nav ul {
@@ -79,9 +81,15 @@ header nav ul:nth-child(1) {
   border-top: 0.1rem solid #29292E;
 }
 @media screen and (min-width: 1024px) {
+  header nav ul:nth-child(1) {
+    border-style: none;
+  }
+}
+@media screen and (min-width: 1024px) {
   header nav ul {
     -moz-column-gap: 2rem;
          column-gap: 2rem;
+    flex-direction: row;
     font-size: 0.75rem;
     justify-content: space-around;
   }
@@ -101,6 +109,10 @@ header nav ul li:hover {
   border-left: 0.2rem solid #A8A8B3;
 }
 @media screen and (min-width: 1024px) {
+  header nav ul li {
+    border-bottom: 0;
+    padding: 0;
+  }
   header nav ul li::after {
     content: " ";
     display: block;

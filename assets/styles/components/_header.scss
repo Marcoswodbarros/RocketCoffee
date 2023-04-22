@@ -66,7 +66,9 @@ header {
         width: 100vw;
 
         @media screen and (min-width: $laptop) {
+            display: block;
             position: static;
+            width: auto;
         }
 
         ul {
@@ -75,10 +77,15 @@ header {
 
             &:nth-child(1) {
                 border-top: .1rem solid $color-border;
+
+                @media screen and (min-width: $laptop) {
+                    border-style: none;
+                }
             }
 
             @media screen and (min-width: $laptop) {
                 column-gap: 2rem;
+                flex-direction: row;
                 font-size: .75rem;
                 justify-content: space-around;
             }
@@ -97,6 +104,9 @@ header {
                 }
 
                 @media screen and (min-width: $laptop) {
+                    border-bottom: 0;
+                    padding: 0;
+
                     &::after {
                         content: " ";
                         display: block;

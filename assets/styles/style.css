@@ -76,6 +76,10 @@ header nav ul {
   flex-direction: column;
   row-gap: 1rem;
 }
+header nav ul:nth-child(1) {
+  border-top: 0.1rem solid #29292E;
+  padding-top: 1rem;
+}
 @media screen and (min-width: 1024px) {
   header nav ul {
     -moz-column-gap: 2rem;

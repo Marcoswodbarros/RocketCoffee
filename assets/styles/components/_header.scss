@@ -73,6 +73,11 @@ header {
             display: flex;
             flex-direction: column;
             row-gap: 1rem;
+
+            &:nth-child(1){
+                border-top: .1rem solid $color-border;
+                padding-top: 1rem;
+            }
             
             @media screen and (min-width: $laptop) {
                 column-gap: 2rem;

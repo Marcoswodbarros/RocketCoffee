@@ -1,3 +1,4 @@
+// Variables
 let openMenu = document.querySelector('.header__menu');
 let closeMenu = document.querySelector('.header__menu--close');
 let nav = document.querySelector('nav');
@@ -7,9 +8,13 @@ let mainButton = document.querySelector('.main__button--container');
 let mainTexts = document.querySelector('.main__texts--container');
 let mainImages = document.querySelector('.main__images--container');
 
+
+// Events
 openMenu.addEventListener("click", menuOpened);
 closeMenu.addEventListener("click", menuClosed);
 
+
+// Functions
 function menuOpened () {
     openMenu.style.display = "none";
     closeMenu.style.display = "block";
@@ -19,7 +24,6 @@ function menuOpened () {
     mainTexts.style.display = "none"; 
     mainImages.style.display = "none"; 
 }
-
 
 function menuClosed () {
     openMenu.style.display = "block";

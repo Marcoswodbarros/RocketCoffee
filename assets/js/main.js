@@ -2,7 +2,6 @@
 let openMenu = document.querySelector('.header__menu');
 let closeMenu = document.querySelector('.header__menu--close');
 let nav = document.querySelector('nav');
-let li = document.querySelector('li');
 let h1 = document.querySelector('h1');
 let mainButton = document.querySelector('.main__button--container');
 let mainTexts = document.querySelector('.main__texts--container');

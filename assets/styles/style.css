@@ -59,7 +59,7 @@ header .header__desktop--blur {
 }
 header nav {
   background-color: #000;
-  color: #FFF;
+  color: #E1E1E6;
   display: none;
   left: 0;
   position: absolute;
@@ -68,6 +68,7 @@ header nav {
 }
 @media screen and (min-width: 1024px) {
   header nav {
+    color: #FFF;
     display: block;
     position: static;
     width: auto;
@@ -107,6 +108,7 @@ header nav ul li {
 }
 header nav ul li:hover {
   border-left: 0.2rem solid #A8A8B3;
+  color: #FFF;
 }
 @media screen and (min-width: 1024px) {
   header nav ul li {
@@ -123,19 +125,13 @@ header nav ul li:hover {
   }
   header nav ul li:hover {
     border-style: none;
+    color: #FFF;
+    cursor: pointer;
   }
   header nav ul li:hover:hover::after {
     background-color: #FFF;
     width: 100%;
   }
-}
-header nav ul li a {
-  color: #E1E1E6;
-  text-decoration: none;
-}
-header nav ul li a:hover {
-  color: pink;
-  cursor: pointer;
 }
 header .header__button {
   color: #FFF;

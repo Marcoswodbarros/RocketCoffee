@@ -58,7 +58,7 @@ header {
 
     nav {
         background-color: $color-backgrond;
-        color: $color-text-color;
+        color: $color-text-color-menu-mobile;
         display: none;
         left: 0;
         position: absolute;
@@ -66,6 +66,7 @@ header {
         width: 100vw;
 
         @media screen and (min-width: $laptop) {
+            color: $color-text-color;
             display: block;
             position: static;
             width: auto;
@@ -101,6 +102,7 @@ header {
 
                 &:hover {
                     border-left: .2rem solid $color-border-menu-mobile;
+                    color: $color-text-color;
                 }
 
                 @media screen and (min-width: $laptop) {
@@ -118,21 +120,13 @@ header {
 
                     &:hover {
                         border-style: none;
+                        color: $color-text-color;
+                        cursor: pointer;
 
                         &:hover::after {
                             background-color: $color-text-color;
                             width: 100%;
                         }
-                    }
-                }
-
-                a {
-                    color: $color-text-color-menu-mobile;
-                    text-decoration: none;
-
-                    &:hover {
-                        color: pink;
-                        cursor: pointer;
                     }
                 }
             }

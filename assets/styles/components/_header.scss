@@ -64,21 +64,19 @@ header {
         position: absolute;
         top: 5rem;
         width: 100vw;
-        
+
         @media screen and (min-width: $laptop) {
             position: static;
         }
-        
+
         ul {
             display: flex;
             flex-direction: column;
-            row-gap: 1rem;
 
-            &:nth-child(1){
+            &:nth-child(1) {
                 border-top: .1rem solid $color-border;
-                padding-top: 1rem;
             }
-            
+
             @media screen and (min-width: $laptop) {
                 column-gap: 2rem;
                 font-size: .75rem;
@@ -92,24 +90,30 @@ header {
 
             li {
                 border-bottom: .1rem solid $color-border;
-                padding-bottom: 1rem;
-                padding-left: 2rem;
-
-                &::after {
-                    content: " ";
-                    display: block;
-                    height: 3px;
-                    margin: auto;
-                    transition: width .7s ease;
-                    width: 0px;
-                }
+                padding: 1rem 0 1rem 2rem;
 
                 &:hover {
-                    cursor: pointer;
+                    border-left: .2rem solid $color-border-menu-mobile;
+                }
 
-                    &:hover::after {
-                        background-color: $color-text-color;
-                        width: 100%;
+                @media screen and (min-width: $laptop) {
+                    &::after {
+                        content: " ";
+                        display: block;
+                        height: 3px;
+                        margin: auto;
+                        transition: width .7s ease;
+                        width: 0px;
+                    }
+
+                    &:hover {
+                        border-style: none;
+                        cursor: pointer;
+
+                        &:hover::after {
+                            background-color: $color-text-color;
+                            width: 100%;
+                        }
                     }
                 }
             }

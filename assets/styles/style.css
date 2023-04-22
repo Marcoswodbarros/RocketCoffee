@@ -58,21 +58,27 @@ header .header__desktop--blur {
   }
 }
 header nav {
+  background-color: #000;
   color: #FFF;
   position: absolute;
-  background-color: #000;
   top: 5rem;
+  left: 0;
 }
 @media screen and (min-width: 1024px) {
   header nav {
     position: static;
   }
 }
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  width: 100vw;
+}
 @media screen and (min-width: 1024px) {
   header nav ul {
     -moz-column-gap: 2rem;
          column-gap: 2rem;
-    display: flex;
     font-size: 0.75rem;
     justify-content: space-around;
   }
@@ -83,6 +89,11 @@ header nav {
          column-gap: 3.5rem;
     font-size: 1.25rem;
   }
+}
+header nav ul li {
+  border-bottom: 0.1rem solid #29292E;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
 }
 header nav ul li::after {
   content: " ";

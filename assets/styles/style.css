@@ -123,12 +123,19 @@ header nav ul li:hover {
   }
   header nav ul li:hover {
     border-style: none;
-    cursor: pointer;
   }
   header nav ul li:hover:hover::after {
     background-color: #FFF;
     width: 100%;
   }
+}
+header nav ul li a {
+  color: #E1E1E6;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  color: pink;
+  cursor: pointer;
 }
 header .header__button {
   color: #FFF;

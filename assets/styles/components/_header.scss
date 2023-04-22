@@ -118,12 +118,21 @@ header {
 
                     &:hover {
                         border-style: none;
-                        cursor: pointer;
 
                         &:hover::after {
                             background-color: $color-text-color;
                             width: 100%;
                         }
+                    }
+                }
+
+                a {
+                    color: $color-text-color-menu-mobile;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: pink;
+                        cursor: pointer;
                     }
                 }
             }

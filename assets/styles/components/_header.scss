@@ -59,13 +59,15 @@ header {
     nav {
         color: $color-text-color;
         position: absolute;
+        background-color: $color-backgrond;
+        top: 5rem;
 
+        
         @media screen and (min-width: $laptop) {
             position: static;
         }
-
+        
         ul {
-            display: none;
 
             @media screen and (min-width: $laptop) {
                 column-gap: 2rem;

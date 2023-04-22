@@ -37,6 +37,13 @@ header {
         }
     }
 
+    .header__menu--close {
+        display: none;
+        position: absolute;
+        right: 1rem;
+        top: 2rem;
+    }
+
     .header__desktop--blur {
         display: none;
 

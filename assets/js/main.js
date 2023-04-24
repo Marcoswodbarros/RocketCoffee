@@ -40,12 +40,17 @@ function menuClosed() {
 function noHidden() {
     if (window.matchMedia("(min-width:1024px)").matches) {
         nav.style.display = "block";
+        openMenu.style.display = "none";
+        closeMenu.style.display = "none";
         h1.style.display = "none";
         mainButton.style.display = "none";
+        mainTexts.style.display = "block";
+        mainImages.style.display = "flex";
     }
 
     else if (window.matchMedia("(min-width:375px)").matches) {
         nav.style.display = "none";
+        openMenu.style.display = "block";
         h1.style.display = "block";
         mainButton.style.display = "flex";
     }

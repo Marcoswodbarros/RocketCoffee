@@ -28,24 +28,15 @@ Users should be able to:
 
 ### Screenshot
 
-![Mobile](https://user-images.githubusercontent.com/108278189/233124013-338efebc-3e72-475e-82d8-4a362fd16edd.png)
+![Mobile](https://user-images.githubusercontent.com/108278189/234101312-b32105f8-b03f-46d0-89df-e21b4ab76c6c.png)
+![Mobile - Menu open](https://user-images.githubusercontent.com/108278189/234102460-0c24d865-cd91-4959-874d-48177d1b607e.png)
 
-![Mobile - Dark](https://user-images.githubusercontent.com/108278189/233124040-3908a671-b901-453a-88b9-1f377b532b2d.png)
+![Tablet](https://user-images.githubusercontent.com/108278189/234101379-04fc01f8-88fd-43de-8aa7-33afecf342bc.png)
+![Tablet - Menu Open](https://user-images.githubusercontent.com/108278189/234102599-42a5dfef-cfe7-4bd8-ab71-9b351431c5f5.png)
 
+![Laptop](https://user-images.githubusercontent.com/108278189/234101447-67276ca5-b2fe-4a34-8892-98addfc4d509.png)
 
-![Tablet](https://user-images.githubusercontent.com/108278189/233124081-3e6496dd-7cc6-4470-837e-bc8e8e0de81b.png)
-
-![Tablet - Dark](https://user-images.githubusercontent.com/108278189/233124111-94107ae9-d60d-4475-b63b-150a32476c8b.png)
-
-
-![Laptop](https://user-images.githubusercontent.com/108278189/233124154-e1c45a72-a80f-4087-9cf0-50859c5bfa92.png)
-
-![Laptop - Dark](https://user-images.githubusercontent.com/108278189/233124352-7da1d903-753f-41dc-a777-9d01e5b7bf34.png)
-
-
-![Laptop L](https://user-images.githubusercontent.com/108278189/233124412-aba3b506-cab1-4eb7-a495-9e0c8e1f540f.png)
-
-![Laptop L - Dark](https://user-images.githubusercontent.com/108278189/233124445-30a54293-0a26-4674-86ca-95aaf93f3c58.png)
+![Laptop-L](https://user-images.githubusercontent.com/108278189/234101517-95dd95e5-2bde-4150-b684-8855cbf3008e.png)
 
 ### Links
 

@@ -138,7 +138,8 @@ main {
             @media screen and (min-width: $laptop) {
                 bottom: 0;
                 display: block;
-                height: 24rem;
+                height: 20rem;
+                margin-bottom: 1rem;
                 position: absolute;
                 z-index: 1;
             }

@@ -311,7 +311,8 @@ main .main__images--container .images__container--big {
   main .main__images--container .images__container--big {
     bottom: 0;
     display: block;
-    height: 24rem;
+    height: 20rem;
+    margin-bottom: 1rem;
     position: absolute;
     z-index: 1;
   }
